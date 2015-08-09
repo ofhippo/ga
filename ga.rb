@@ -1,12 +1,12 @@
 require './game.rb'
 require './player.rb'
 class GA
-  SELECTION = :tournament
+  SELECTION = :tournament || :roulette
   NUM_PLAYERS = 100
   ELITISM_SURVIVORS = 10
   NUM_GAMES_PER_GENERATION = 1
   TOURNAMENT_SIZE = 10
-  TOURNAMENT_PREFERS_FITTER_P = 1
+  TOURNAMENT_PREFERS_FITTER_P = 0.9
   MUTATION_RATE = 0.04
 
   REPORT_INTERVAL = 10
